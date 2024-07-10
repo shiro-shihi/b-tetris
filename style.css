@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* パネル全体の幅 */
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 560px; /* 縦幅を調整 */
+}
+
+.game-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.scoreboard {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#score {
+  font-weight: bold;
+}
+
+canvas#tetris {
+  display: block;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+.sidebar {
+  width: 200px; /* サイドバーの幅 */
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.next-piece, .hold-piece {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#next-label, #hold-label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+canvas#next, canvas#hold {
+  display: block;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#stats {
+  margin-left: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.play-button {
+  margin-top: 10px;
+}

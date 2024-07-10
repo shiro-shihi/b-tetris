@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Tetris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-panel">
+      <div class="scoreboard">
+        <div id="score"></div>
+      </div>
+      <canvas id="tetris"></canvas>
+    </div>
+    <div class="sidebar">
+      <div class="next-piece">
+        <div id="next-label">Next</div>
+        <canvas id="next"></canvas>
+      </div>
+      <div class="hold-piece"> <!-- Hold用のセクション -->
+        <div id="hold-label">Hold</div>
+        <canvas id="hold"></canvas>
+      </div>
+      <div id="stats"></div> <!-- ステータス表示用のDIV -->
+      <div class="controls">
+        <button id="tweet-button" class="hidden">スコアをツイート</button>
+        <button id="info-button">操作説明</button>
+        <select id="language-select">
+          <option value="ja" selected>日本語(ja)</option>
+          <option value="en">English(en)</option>
+        </select>
+        <button id="start-button" class="play-button">プレイ開始</button>
+        <button id="replay-button" class="hidden play-button">再プレイ</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
